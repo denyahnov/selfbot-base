@@ -93,7 +93,7 @@ if __name__ == '__main__':
         input(f'{line}\n[!] WARNING: This application is bannable, are you sure you want to continue?\n[?] Press ENTER to Continue\n{line}')
 
         try:
-            client.run(tkn_real)
+            client.run(tkn_real,bot=False)
         except:
             print("[!] ERROR: Could not connect to Discord client! Check internet connection")
             exit(0)
